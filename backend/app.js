@@ -31,6 +31,8 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/sauces", sauceRoutes);
 app.use("/api/auth", userRoutes);
+  
+
 //post un produit
 // app.post("/api/stuff", (req, res, next) => {
 //   console.log(req.body);

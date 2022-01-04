@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
+//const sanitizerPlugin = require("mongoose-sanitizer-plugin");
+//const sauceValidation = require("../middleware/sauceValidation");
 
 const sauceSchema = mongoose.Schema({
-  userId: { type: String, required: true },
+  userId: { type: String, required: [true, "userId name required"] },
   name: { type: String, required: true },
   manufacturer: { type: String, required: true },
   description: { type: String, required: true },
@@ -13,5 +15,7 @@ const sauceSchema = mongoose.Schema({
   usersLiked: { type: [String] },
   usersDisliked: { type: [String] },
 });
+
+//sauceSchema.plugin(sanitizerPlugin);
 
 module.exports = mongoose.model("Sauce", sauceSchema);
