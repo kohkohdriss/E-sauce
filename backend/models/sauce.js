@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-//const sanitizerPlugin = require("mongoose-sanitizer-plugin");
-//const sauceValidation = require("../middleware/sauceValidation");
+const sanitizerPlugin = require("mongoose-sanitizer-plugin");
+//const sauceValidation = require("../middleware/validation_inputs");
 
 const sauceSchema = mongoose.Schema({
   userId: { type: String, required: [true, "userId name required"] },

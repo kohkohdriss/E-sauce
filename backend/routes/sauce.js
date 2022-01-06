@@ -10,10 +10,10 @@ const isOwner = require("../middleware/isOwner");
 //const likeValidate = require("../middleware/likingValidate");
 //const validateUser = require("../middleware/validateUser");
 
-router.post("/", auth, multer, sauceCtrl.createSauce);
+router.post("/", auth, multer,validate.sauce, sauceCtrl.createSauce);
 router.get("/", auth, sauceCtrl.getAllSauce);
 router.get("/:id", auth, sauceCtrl.getOneSauce);
-router.put("/:id", auth, isOwner, validate.sauce, multer, sauceCtrl.modifySauce);
+router.put("/:id", auth, isOwner, multer,validate.sauce, sauceCtrl.modifySauce);
 //router.put("/:id", auth, validate.id, validate.sauce, multer, sauceCtrl.modifySauce);
 //router.put("/:id", auth, isOwner, multer, sauceCtrl.modifySauce);
 
@@ -21,7 +21,7 @@ router.delete("/:id", auth, isOwner, sauceCtrl.deleteSauce);
 
 //router.delete("/:id", auth, isOwner, sauceCtrl.deleteSauce);
 
-router.post("/:id/like", auth, sauceCtrl.likeDislike);
+router.post("/:id/like", auth,validate.like, sauceCtrl.likeDislike);
 
 module.exports = router;
 
