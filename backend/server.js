@@ -1,9 +1,11 @@
+/*Le module http est un objet javascript, contenant des données et des fonctions 
+dont nous allons avoir besoin pour créer un serveur web */
 const http = require("http");
+ //const https = require('https');
 const app = require("./app");
-
+//la fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
-
   if (isNaN(port)) {
     return val;
   }
@@ -12,15 +14,17 @@ const normalizePort = (val) => {
   }
   return false;
 };
+
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
-
+//la fonction errorHandler  recherche les différentes erreurs et les gère de manière appropriée
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
     throw error;
   }
   const address = server.address();
-  const bind = typeof address === "string" ? "pipe " + address : "port: " + port;
+  const bind =
+    typeof address === "string" ? "pipe " + address : "port: " + port;
   switch (error.code) {
     case "EACCES":
       console.error(bind + " requires elevated privileges.");
@@ -34,6 +38,7 @@ const errorHandler = (error) => {
       throw error;
   }
 };
+
 
 const server = http.createServer(app);
 

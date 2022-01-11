@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const sanitizerPlugin = require("mongoose-sanitizer-plugin");
-//const sauceValidation = require("../middleware/validation_inputs");
 
 const sauceSchema = mongoose.Schema({
   userId: { type: String, required: [true, "userId name required"] },
@@ -16,6 +15,6 @@ const sauceSchema = mongoose.Schema({
   usersDisliked: { type: [String] },
 });
 
-//sauceSchema.plugin(sanitizerPlugin);
+sauceSchema.plugin(sanitizerPlugin);
 
 module.exports = mongoose.model("Sauce", sauceSchema);
