@@ -1,4 +1,4 @@
-# ![left 100%](https://www.defi-metiers.fr/sites/default/files/doc-kelios/Logo/2018/09/21/logo_oc_BtoC_1000.png) OpenClassrooms-Développeur Web
+# ![left 100%](https://raw.githubusercontent.com/kohkohdriss/archive/main/images/Logo_OpenClassrooms.png) OpenClassrooms-Développeur Web
 
 _`Début de formation le Avril/2021`_
 
@@ -51,7 +51,7 @@ Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur 
 * Ce repo contient les deux dossiers `Frontend` et `Backend`.
 Vous pouvez cloner ce repository pour récupérer en local les deux parties Front et Back de l'application.
 
-* Si besoin, vous pouvez trouver le Frontend séparément sur [github](https://github.com/kohkohdriss/E-sauce.git).
+* Si besoin, vous pouvez trouver le Frontend séparément sur [github](https://github.com/kohkohdriss/E-sauce/tree/main/frontend).
 
 ***
 
@@ -107,13 +107,13 @@ Si les packages sont déja installés, ces commandes suffisent à démarrer les 
 
 → [Le lien vers le dépôt Git public contenant le code de l’API.](https://github.com/kohkohdriss/E-sauce.git)
 
-→ [Le lien vers le fichier pdf donné en tant que livrable.](https://drive.google.com/file/d/1XXAiwnn27O38xPH-HlFFoFYgR69VlH0f/view?usp=sharing)
+→ [Le lien vers le fichier pdf donné en tant que livrable.](https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Requirements_DW_P6.pdf)
 
 ***
 
 ### 📝 &nbsp; License
 
-Copyright © 2022 [Thierry Laval](https://github.com/kohkohdriss).
+Copyright © 2022 [Driss Kohkoh](https://github.com/kohkohdriss).
 
 Ce projet est sous licence [MIT](/backend/LICENCE).
 
